@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Header Navigation Styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5) !important; /* Subtle transparency for modern look */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+
+        nav a.nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        nav a.nav-link:hover {
+            color: #ff69b4 !important; /* Highlight link on hover */
+        }
+
+        /* Hero Section Styling */
+        header {
+            background: linear-gradient(to right, #ff69b4, #1abc9c);
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Contact Container Styling */
+        .contact-container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .contact-header {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ff69b4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h4 {
+            font-size: 1.4em;
+            color: #1abc9c;
+        }
+
+        .contact-info li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #1abc9c;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #ff69b4;
+            text-decoration: underline;
+        }
+
+        .contact-footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Fake News Detection</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <div class="container contact-container">
+        <h2 class="contact-header">Get in Touch</h2>
+        <p class="lead text-center">For any inquiries, feel free to reach out to us through the following details.</p>
+
+        <div class="contact-info">
+            <h4><i class="fas fa-envelope"></i> Email:</h4>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="mailto:mitha0179@gmail.com">mitha0179@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-footer">
+            <p class="text-muted">Thank you for visiting! We look forward to assisting you.</p>
+        </div>
+    </div>
+    <footer><center>
+        <p>&copy; 2024 Fake News Detection. All rights reserved.</p>
+    </center></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

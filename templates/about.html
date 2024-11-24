@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Inline CSS for Styles -->
+    <style>
+        @font-face {
+            font-family: 'Banschrift';
+            src: url('{{ url_for('static', filename='fonts/Banschrift.ttf') }}') format('truetype');
+        }
+
+        body {
+            font-family: 'Banschrift', sans-serif;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section ul,
+        .section ol {
+            margin-left: 30px;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            color: black; /* Content under Key Features in black */
+        }
+
+        .features-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .features-list li {
+            margin-bottom: 15px;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .container h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .about-box {
+            background: rgba(255, 255, 255, 0.8); /* Light white background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar Transparent Background */
+        nav {
+            background-color: rgba(0, 0, 0, 0.5) !important; /* Increased transparency */
+        }
+
+        nav a.nav-link {
+            color: white !important; /* Keeps navbar links white */
+        }
+
+        /* Custom Styles */
+        h1.text-pink {
+            color: #e91e63; /* Pink color for About Us title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">Fake News Detection</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 about-box">
+        <h1 class="text-pink">About Us</h1>
+        <p class="lead">We provide a reliable platform for analyzing news content using state-of-the-art machine learning techniques. Our goal is to empower users to distinguish between fake and real news effectively.</p>
+
+        <!-- Key Features Section -->
+        <div class="section">
+            <h2>Key Features</h2>
+            <p>Our Fake News Detection system is designed with a range of powerful features to help you stay informed and make better decisions:</p>
+            <ul class="features-list">
+                <li><strong>Real-time Analysis:</strong> Our system analyzes news articles in real time, providing immediate feedback on their authenticity.</li>
+                <li><strong>Machine Learning Integration:</strong> Powered by advanced machine learning algorithms, our system constantly improves its detection accuracy based on new data.</li>
+                <li><strong>User-friendly Interface:</strong> With an intuitive interface, our system is easy to use, allowing anyone to check the validity of news articles with ease.</li>
+                <li><strong>Multilingual Support:</strong> Our system supports multiple languages, helping users from different regions identify fake news in their native language.</li>
+                <li><strong>Impactful Reporting:</strong> The system generates detailed reports on the authenticity of news articles, highlighting key factors influencing the results.</li>
+            </ul>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="section">
+            <h2>How It Works</h2>
+            <p>Our Fake News Detection system uses a combination of Natural Language Processing (NLP) and Machine Learning to analyze news content. Here's how it works:</p>
+            <ol>
+                <li><strong>Data Collection:</strong> The system collects articles from various sources, including websites, social media, and news platforms.</li>
+                <li><strong>Content Analysis:</strong> Using NLP techniques, the system analyzes the content, checking for linguistic features common in fake news.</li>
+                <li><strong>Classification:</strong> Machine learning models classify the news based on learned patterns, assigning a reliability score.</li>
+                <li><strong>Output:</strong> The system provides a result indicating whether the news is real, fake, or uncertain, along with a confidence score.</li>
+            </ol>
+        </div>
+
+        <!-- Why It Matters Section -->
+        <div class="section">
+            <h2>Why It Matters</h2>
+            <p>The proliferation of fake news poses a serious challenge to society. Misinformation can influence elections, fuel conflicts, and create public health crises. By leveraging our Fake News Detection system, individuals and organizations can contribute to a more informed and educated society.</p>
+        </div>
+    </div>
+
+    <footer><center>
+        <p>&copy; 2024 Fake News Detection. All rights reserved.</p>
+    </center></footer>
+
+    <!-- Scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
